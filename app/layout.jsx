@@ -4,6 +4,7 @@ import Provider from "@components/Provider";
 export const metadata = {
   title: "Promptopia",
   description: "Discover and share ai prompots",
+  logo: "/assets/images/logo.svg"
 };
 
 const RootLayout = ({children}) => {
