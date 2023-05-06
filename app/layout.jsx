@@ -1,24 +1,26 @@
 import "@styles/globals.css";
-import Nav from '@components/nav'
+import Nav from "@components/nav";
 import Provider from "@components/Provider";
 export const metadata = {
   title: "Promptopia",
   description: "Discover and share ai prompots",
-  logo: "/assets/images/logo.svg"
+  logo: "/assets/images/logo.svg",
 };
 
-const RootLayout = ({children}) => {
+const RootLayout = ({ children }) => {
   return (
     <html lang="en">
       <body>
-        <div className="main">
-          <div className="gradient" />
-        </div>
+        <Provider>
+          <div className="main">
+            <div className="gradient" />
+          </div>
 
-        <main className="app">
-          <Nav/>
-          {children}
-        </main>
+          <main className="app">
+            <Nav />
+            {children}
+          </main>
+        </Provider>
       </body>
     </html>
   );
